@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="50dp">
+
+        <!-- Page Header -->
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/unit_converter"
+            android:textColor="#FF9F1C"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/baloo2" />
+
+        <!-- Label: Conversion Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conversion_type"
+            android:textColor="#CB997E"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:minHeight="20dp" />
+
+        <!-- Convert From -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/convert_from"
+            android:textColor="#CB997E"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/sourceSpinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:minHeight="20dp" />
+
+        <!--Convert To-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/convert_to"
+            android:textColor="#CB997E"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/destinationSpinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:minHeight="20dp" />
+
+        <!--Enter Value-->
+        <EditText
+            android:id="@+id/inputValue"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FFBF69"
+            android:hint="@string/enter_value"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="#222222"
+            android:textColorHint="#CB997E" />
+
+        <!-- Convert Button -->
+        <Button
+            android:id="@+id/convertButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#FF9F1C"
+            android:text="@string/convert_button"
+            android:textColor="#5D4037" />
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:text="@string/result_placeholder"
+            android:textColor="#FF9F1C"
+            android:textSize="40sp" />
+    </LinearLayout>
+</ScrollView>

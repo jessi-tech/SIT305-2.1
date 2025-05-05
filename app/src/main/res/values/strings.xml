@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="unit_converter">Unit Converter</string>
+    <string name="enter_value">Enter value</string>
+    <string name="convert_button">Convert</string>
+    <string name="result_placeholder">Result</string>
+    <string name="conversion_type">Conversion Type</string>
+    <string name="convert_from">Convert From</string>
+    <string name="convert_to">Convert To</string>
+</resources>
